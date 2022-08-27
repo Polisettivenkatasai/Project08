@@ -1,0 +1,122 @@
+body {
+    margin: 0px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    font-family: Roboto;
+}
+nav > img {
+    width: 100px;
+    position: relative;
+    left: 5%;
+}
+.nav-items {
+    display: flex;
+    color: #0d1b68;
+}
+h5.nav-item {
+    margin-right: 15%;
+}
+button.signin-btn {
+    background: linear-gradient(45deg, #965cf2, #ff89dc);
+    border: 0px;
+    width: 14.24vh;
+    height: 4vh;
+    border-radius: 3.2vh;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: white;
+    position: relative;
+    right: 5%;
+}
+.intro-section {
+    display: flex;
+}
+.left-section {
+    font-family: 'Roboto';
+    padding: 7%;
+}
+button.learn-more-btn {
+    background: linear-gradient(45deg, rgb(150, 92, 242), rgb(255, 137, 220));
+    border: 0px;
+    width: 162px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 15%;
+}
+.imgs-div {
+    display: flex;
+}
+img[alt="intro-img"] {
+    width: 80%;
+    position: relative;
+    right: 13%;
+}
+img.vector-img {
+    width: 10%;
+    position: relative;
+    top: 66%;
+    height: 15%;
+}
+img.vector-dot {
+    width: 2%;
+    position: relative;
+    top: 68%;
+    right: 4%;
+    height: 4%;
+}
+h1 {
+    color: #3e4794;
+    font-size: 9vh;
+}
+h4 {
+    color: #3e4794;
+    font-weight: lighter;
+    font-size: small;
+    width: 43%;
+    height: auto;
+}
+.main-div::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+    background: url(./images/backcover.svg);
+    z-index: -1;
+    background-position-x: right;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+img[alt="menu"] {
+    width: 18px;
+    position: relative;
+    left: 13%;
+    display: none;
+}
+
+@media screen and (max-width:750px) {
+    .nav-items{
+        display: none;
+    }
+}
+@media screen and (max-width:500px) {
+    img[alt="menu"]{
+        display: block;
+    }
+}
+@media screen and (max-width:500px) {
+    .imgs-div{
+        display: none;
+    }
+}
